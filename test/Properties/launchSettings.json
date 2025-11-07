@@ -35,7 +35,8 @@
             "environmentVariables": {
                 "ASPNETCORE_HTTPS_PORTS": "8081",
                 "ASPNETCORE_HTTP_PORTS": "8080",
-                "KAFKA_BOOTSTRAP_SERVERS": "kafka:9092"
+                "KAFKA_BOOTSTRAP_SERVERS": "kafka:9092",
+                "KAFKA_CONSUMER_GROUP_ID":"events-service"
             },
             "publishAllPorts": true,
             "useSSL": true

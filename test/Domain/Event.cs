@@ -9,10 +9,12 @@ namespace test.Domain
             UserId = userId;
             Type = type;
             Data = data;
+            Timestamp = DateTime.UtcNow;
         }
 
-        public string UserId { get; set; }
-        public EventType Type { get; set; }
-        public object Data { get; set; }
+        public string UserId { get; private set; }
+        public EventType Type { get; private set; }
+        public object Data { get; private set; }
+        public DateTime Timestamp { get; private set; }
     }
 }
